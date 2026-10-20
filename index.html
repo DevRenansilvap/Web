@@ -3,30 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Porsche Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercicio</title>
   </head>
   <body>
-    <nav>
-      <img src="img/logo.jpeg" alt="logo porsche" />
-      <h2>Porsche</h2>
-      <ul>
-        <li><i class="fa-solid fa-location-dot"></i>Local</li>
-        <hr />
-        <li><i class="fa-brands fa-whatsapp"></i>(85) 9 9999-9999</li>
-        <hr />
-        <li><i class="fa-solid fa-globe"></i>Pais</li>
-      </ul>
-    </nav>
-    <section>
-        <h2>Estoque Dísponivel</h2>
-        
-    </section>
+    <div class="container_login">
+      <div class="usuario">
+        <label for="usuario" class="usuario1">Usuario</label>
+        <input type="text" name="usuario" id="usuario" />
+      </div>
+      <div class="senha">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <button type="button" command="show-modal" commandfor="meu-modal1">Esqueci Minha Senha</a>
+      </button>
+      <button ><a href="pag2.html">Login</a></button>
+    </div>
+    <dialog id="meu-modal1" closedby="any">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+      <div class="acoes">
+        <button type="button" commandfor="meu-modal1"" command="close">Recuperar</button>
+      </div>
+    </dialog>
   </body>
 </html>
